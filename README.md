@@ -27,3 +27,7 @@ This project comparing with its predecessor [checkers2](https://github.com/auxil
 ## New features
 
 The first version was written about ten years ago and never really finished (although working as a game). This project intended to upgrade the original source to be GTK+3 compatible and the appearance to be more Gnome3-ish. Therefore the button sidebar was eliminated and a HeaderBar was added featuring the only significant button. Application icon was also added.
+
+## Screenshot
+
+![Screenshot of the GTK+3 app in Gnome3](/checkers-gtk3.png)
