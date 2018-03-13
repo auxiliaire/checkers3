@@ -22,7 +22,7 @@ The app was written on Linux but it supports other platforms as well like Window
 
 ## Porting a GTK+2 app to GTK+3
 
-This project comparing with its predecessor [checkers2](https://github.com/auxiliaire/checkers2) can provide some hints about what needs to be changed in the code in order to make it work with GTK+3. Of course it's not a very sophisticated project so many gotchas necesseraly left out, but the basics seems to be covered.
+This project comparing with its predecessor [checkers2](https://github.com/auxiliaire/checkers2) can provide some hints about what needs to be changed in the code in order to make it work with GTK+3. Of course it's not a very sophisticated project so many gotchas necessarily left out, but the basics seem to be covered.
 
 ## New features
 
