@@ -1,0 +1,9 @@
+[default]
+name=Default
+device=local
+runtime=flatpak:org.gnome.Sdk/x86_64/3.26
+config-opts=
+run-opts=
+prefix=/app
+app-id=
+default=true
