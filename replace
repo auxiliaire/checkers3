@@ -1,0 +1,9 @@
+#!/bin/sh
+
+make
+if [ -f ./src/checkers ]; then
+ mv -f ./src/checkers ./
+ ./checkers
+else
+ echo "A fordítás nem sikerült"
+fi
