@@ -1,0 +1,47 @@
+# Chinese Checkers Hungarian translations.
+# Copyright (C) 2018 Viktor Daróczi
+# This file is distributed under the same license as the PACKAGE package.
+# Viktor Daróczi <viktor.daroczi@gmail.com>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-19 18:54+0100\n"
+"PO-Revision-Date: 2018-03-19 19:00+0100\n"
+"Last-Translator: Viktor Daróczi <viktor.daroczi@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/interface.c:135
+msgid "New"
+msgstr "Új"
+
+#: ../src/callbacks.c:207
+msgid "Congratulations!"
+msgstr "Gratulálunk!"
+
+#: ../src/callbacks.c:219
+msgid "Better luck next time!"
+msgstr "Hátha máskor több szerencséd lesz!"
+
+#: ../src/callbacks.c:221
+#, c-format
+msgid ""
+"%d cells remained filled.\n"
+"Try to achieve 3 or less to earn stars!\n"
+msgstr "%d golyót nem sikerült kiszabadítani.\n"
+"Próbáld elérni, hogy három vagy kevesebb maradjon, hogy csillagokat szerezz!\n"
+
+#: ../src/callbacks.c:225
+msgid "Game Over"
+msgstr "Vége"
+
+#: ../src/support.c:90 ../src/support.c:114
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Pixmap fájl (%s) nem található."

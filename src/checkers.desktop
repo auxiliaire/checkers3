@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Chinese Checkers
+Exec=checkers
+Type=Application
+Icon=checkers
+Comment=A casual board game to challenge your mind
+Categories=GTK;GNOME;Games;
+StartupNotify=true
+

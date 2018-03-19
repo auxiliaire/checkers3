@@ -51,3 +51,4 @@ autom4te.cache
 *.o
 *.zip
 /src/checkers
+*.mo

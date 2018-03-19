@@ -178,16 +178,51 @@ guint8 count_cells_remained()
   return c;
  }
 
+char * string_repeat( const char * s, int n) {
+  size_t slen = strlen(s);
+  char * dest = malloc(n * slen+1);
+ 
+  int i; char * p;
+  for ( i=0, p = dest; i < n; ++i, p += slen ) {
+    memcpy(p, s, slen);
+  }
+  *p = '\0';
+  return dest;
+}
+
 void dialog_show(GtkWindow *parent)
  {
   GtkWidget *dialog;
   guint8 c;
-  c=count_cells_remained();
-  dialog = gtk_message_dialog_new (parent, GTK_DIALOG_MODAL,
-                                   GTK_MESSAGE_INFO, GTK_BUTTONS_OK,
-                                   "Congratulations!");
-  gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog), "%d cells remained filled.\n", c);
-  gtk_window_set_title(GTK_WINDOW(dialog), "Game Over");
+  gchar *subtitle = "";
+
+  c = count_cells_remained();
+
+  if (c < 4)
+    {
+	  dialog = gtk_message_dialog_new (parent,
+                                       GTK_DIALOG_MODAL,
+		                               GTK_MESSAGE_INFO,
+                                       GTK_BUTTONS_OK,
+		                               _("Congratulations!"));
+      
+      gtk_message_dialog_format_secondary_markup (GTK_MESSAGE_DIALOG(dialog), 
+                                                  "<span size=\"xx-large\" color=\"#11B811\">%s</span>", 
+                                                  string_repeat("&#x1f31f;", 4 - c));
+    }
+  else
+    {
+	  dialog = gtk_message_dialog_new (parent,
+                                       GTK_DIALOG_MODAL,
+		                               GTK_MESSAGE_INFO,
+                                       GTK_BUTTONS_OK,
+		                               _("Better luck next time!"));
+      gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG(dialog), 
+                                                _("%d cells remained filled.\nTry to achieve 3 or less to earn stars!\n"), 
+                                                c);
+    }
+
+  gtk_window_set_title(GTK_WINDOW(dialog), _("Game Over"));
   
   gtk_dialog_run(GTK_DIALOG(dialog));
   

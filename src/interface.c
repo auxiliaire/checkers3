@@ -100,7 +100,7 @@ create_window1 (void)
   if (err != NULL)
     {
       /* Report error to user, and free error */
-      g_print("A retekbe!\nBrontos kesztyű.\n");
+      g_print("Could not load ball images!\n");
       g_assert (pixbuf == NULL);
       fprintf (stderr, "Unable to read file: %s\n", err->message);
       g_error_free (err);
