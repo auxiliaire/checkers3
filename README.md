@@ -22,8 +22,12 @@ The app was written on Linux but it supports other platforms as well like Window
 
 ## Porting a GTK+2 app to GTK+3
 
-This project comparing with its predecessor [checkers2](https://github.com/auxiliaire/checkers2) can provide some hints about what needs to be changed in the code in order to make it work with GTK+3. Of course it's not a very sophisticated project so many gotchas necesseraly left out, but the basics seems to be covered.
+This project comparing with its predecessor [checkers2](https://github.com/auxiliaire/checkers2) can provide some hints about what needs to be changed in the code in order to make it work with GTK+3. Of course it's not a very sophisticated project so many gotchas necessarily left out, but the basics seem to be covered.
 
 ## New features
 
 The first version was written about ten years ago and never really finished (although working as a game). This project intended to upgrade the original source to be GTK+3 compatible and the appearance to be more Gnome3-ish. Therefore the button sidebar was eliminated and a HeaderBar was added featuring the only significant button. Application icon was also added.
+
+## Screenshot
+
+![Screenshot of the GTK+3 app in Gnome3](/checkers-gtk3.png)
